@@ -1,6 +1,27 @@
 .pixelify-sans-vi {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+td {
+  width: 200px;
+  height: 500px;
+  border: 6px solid white;
+}
+#one {
+  background: #5bbcff;
+}
+#two {
+  background: #fffab7;
+}
+#three {
+  background: #ffd1e3;
+}
+#four {
+  background: #7ea1ff;
+}
+table {
+  margin: auto;
+}

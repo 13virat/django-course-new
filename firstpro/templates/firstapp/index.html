@@ -1,14 +1,33 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoFFEE SLAP</title>
+    <title>Django Level 2</title>
     <link rel="stylesheet" href="{% static "css/myst.css" %}"/>
 </head>
 <body>
-    <em>this is an coffeeee app</em><br>
-    <img src="{% static "images/c4.jpeg" %}" alt="cofeee not shown">
+    <h1>hello </h1>
+    <h2>record are as follw</h2>
+    <div class="djangotwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th> Site Name </th>
+                <th> Date Accessed </th>
+            </thead>
+        
+            {% for acc in access_records %}
+            <tr>
+                <td>{{ acc.name }}</td>
+                <td>{{ acc.date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p> NO ACCESS RECORD FOUND </p>
+        {% endif %}
+    </div>
 </body>
 </html>

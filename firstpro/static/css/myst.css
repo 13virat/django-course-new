@@ -1,3 +1,6 @@
-em{
+h1{
     color: brown;
+}
+table,th,td{
+    border:2px solid black;
 }
